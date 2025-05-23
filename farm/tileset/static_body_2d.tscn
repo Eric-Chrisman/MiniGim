@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://v41e5ulj166w"]
+
+[ext_resource type="Texture2D" uid="uid://usjglsc6inkg" path="res://Resources/debugTextures/debugIcon.png" id="1_gm8rh"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ipavc"]
+size = Vector2(131, 124)
+
+[node name="StaticBody2D" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_gm8rh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-2.5, -2)
+shape = SubResource("RectangleShape2D_ipavc")
+
+[node name="NavigationObstacle2D" type="NavigationObstacle2D" parent="."]
+radius = 128.57
+vertices = PackedVector2Array(-71, -72, -74, 65, 69, 68, 66, -70)
+affect_navigation_mesh = true
+carve_navigation_mesh = true

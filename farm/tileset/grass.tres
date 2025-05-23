@@ -1,0 +1,33 @@
+[gd_resource type="TileSet" load_steps=4 format=3 uid="uid://be02yu4mkau8e"]
+
+[ext_resource type="Texture2D" uid="uid://b31dcky11xp7c" path="res://Resources/sprite_sheets/Sprite-0001-Sheet.png" id="1_y520b"]
+
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_jrr10"]
+vertices = PackedVector2Array(16, 16, -16, 16, -16, -16, 16, -16)
+polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3)])
+outlines = Array[PackedVector2Array]([PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)])
+agent_radius = 0.0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_apn5s"]
+texture = ExtResource("1_y520b")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+0:0/0/terrain_set = 0
+0:0/0/terrain = 0
+0:0/0/navigation_layer_0/polygon = SubResource("NavigationPolygon_jrr10")
+1:0/0 = 0
+1:0/0/terrain_set = 0
+1:0/0/terrain = 0
+1:0/0/navigation_layer_0/polygon = SubResource("NavigationPolygon_jrr10")
+2:0/0 = 0
+2:0/0/terrain_set = 0
+2:0/0/terrain = 0
+2:0/0/navigation_layer_0/polygon = SubResource("NavigationPolygon_jrr10")
+
+[resource]
+tile_size = Vector2i(32, 32)
+terrain_set_0/mode = 0
+terrain_set_0/terrain_0/name = "grass"
+terrain_set_0/terrain_0/color = Color(0.208195, 0.45342, 0, 1)
+navigation_layer_0/layers = 1
+sources/0 = SubResource("TileSetAtlasSource_apn5s")
