@@ -6,20 +6,23 @@
 [sub_resource type="CircleShape2D" id="CircleShape2D_yv2p5"]
 
 [node name="HumanBody" type="CharacterBody2D"]
+y_sort_enabled = true
 scale = Vector2(0.453102, 0.453102)
 motion_mode = 1
+safe_margin = 4.0
 script = ExtResource("1_yv2p5")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 11)
-scale = Vector2(1.32953, 1)
+scale = Vector2(1.32953, 0.558597)
 shape = SubResource("CircleShape2D_yv2p5")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture_filter = 1
+position = Vector2(0, -17.6561)
 scale = Vector2(2.6215, 2.6215)
 texture = ExtResource("1_re60b")
 
 [node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
 avoidance_enabled = true
+radius = 30.0
 debug_enabled = true

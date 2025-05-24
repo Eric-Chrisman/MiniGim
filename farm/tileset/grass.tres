@@ -2,11 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://b31dcky11xp7c" path="res://Resources/sprite_sheets/Sprite-0001-Sheet.png" id="1_y520b"]
 
-[sub_resource type="NavigationPolygon" id="NavigationPolygon_jrr10"]
-vertices = PackedVector2Array(16, 16, -16, 16, -16, -16, 16, -16)
-polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3)])
-outlines = Array[PackedVector2Array]([PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)])
-agent_radius = 0.0
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_y520b"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_apn5s"]
 texture = ExtResource("1_y520b")
@@ -14,15 +10,15 @@ texture_region_size = Vector2i(32, 32)
 0:0/0 = 0
 0:0/0/terrain_set = 0
 0:0/0/terrain = 0
-0:0/0/navigation_layer_0/polygon = SubResource("NavigationPolygon_jrr10")
+0:0/0/navigation_layer_0/polygon = SubResource("NavigationPolygon_y520b")
 1:0/0 = 0
 1:0/0/terrain_set = 0
 1:0/0/terrain = 0
-1:0/0/navigation_layer_0/polygon = SubResource("NavigationPolygon_jrr10")
+1:0/0/navigation_layer_0/polygon = SubResource("NavigationPolygon_y520b")
 2:0/0 = 0
 2:0/0/terrain_set = 0
 2:0/0/terrain = 0
-2:0/0/navigation_layer_0/polygon = SubResource("NavigationPolygon_jrr10")
+2:0/0/navigation_layer_0/polygon = SubResource("NavigationPolygon_y520b")
 
 [resource]
 tile_size = Vector2i(32, 32)
